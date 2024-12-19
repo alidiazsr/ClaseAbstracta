@@ -2,7 +2,7 @@
 {
     public class Perro: Animal
     {
-        public Perro(string raza) : base(raza)
+        public Perro()
         {
 
         }

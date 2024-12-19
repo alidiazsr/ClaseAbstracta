@@ -5,10 +5,11 @@ namespace HerenciaInterface.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EjemploClaseAbstractaController : Controller
+    public class EjemploClaseAbstractaController : ControllerBase
     {
 
         [HttpGet]
+        [Route("api/EjemploClaseAbstracta")]
         public string EjemploClaseAbstracta()
         {
            //Auto auto = new Auto("Toyota");
@@ -16,7 +17,7 @@ namespace HerenciaInterface.Controllers
             ////vehiculo.ObtenerDistanciaRecorrida();
              Moto moto = new Moto();
             //return auto.ObtenerDistanciaRecorrida();
-            Perro perro = new Perro("Pastor Aleman");
+            Perro perro = new Perro();
             return perro.Comer() + " " + perro.ObtenerDistancia();
 
         }

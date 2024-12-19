@@ -4,7 +4,7 @@
     {
 
         public string raza { get; set; }
-        public Animal(string raza)
+        public Animal()
         {
 
         }
